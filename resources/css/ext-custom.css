@@ -1,0 +1,182 @@
+/*Custom CSS*/
+/*<div>
+<div style="background: url(http://wsproddev.westernu.edu/wu/header1140-bg.png); width:100%; height:80px;">
+	<center>
+		<div style="background: url(http://wsproddev.westernu.edu/wu/header1140.png); no-repeat scroll center top transparent; height:80px; width:1140px;">
+	</center>
+<span style="font-size:220%;color:#FFF;padding: 0 0 0 600px;">Project Name</span>
+</div>*/
+
+#wuheader{
+	/*background-image: url('http://jprod.westernu.edu/cloud/sencha/header1140.png');*/
+
+	background-image: url('http://jprod.westernu.edu/cloud/sencha/header1140-bg.png');
+	height: 80px;
+	width: 100%;
+}
+h1.wuheader{
+	color: #fff;
+	padding: 33px;
+	margin: 0 0;
+	font-size: 3.25em;
+	font-family:  "Footlight MT Light","Bodoni MT Condensed",Georgia;
+	text-align:right;
+}
+
+#south{
+	background-color: rgb(18, 0, 0);
+	height: 100%;
+	text-align: center;
+	width: 100%;
+	color: rgb(253, 253, 253);
+	margin-top: -5px;
+}
+
+#south p{
+	padding: 4px 0px;
+	margin-top: 1px;
+}
+
+#wulogo{
+	float: left;
+}
+
+#wulogo img{
+	padding: 8px 20px 0px 8px;
+}
+
+.x-viewport body{
+    background: url("http://blog.jardalu.com/sites/3/templates/bluemoon/images/content.png") repeat scroll 0 0 transparent;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.switchthis {
+background: url('icons/arrow_switch.png');
+}
+
+.locationIcon {
+background: url('icons/world.png');
+}
+
+.courseIcon {
+background: url('icons/rosette.png');
+}
+
+.scheduleIcon {
+    background: url('icons/glyphicons_021_snowflake.png');
+}
+
+.trainingIcon {
+    background: url('icons/arrow_out.png');
+}
+.user_add {
+    background: url('icons/add.png');
+}
+
+.user_delete {
+    background: url('icons/user_delete.png');
+}
+
+.deleteGrid {
+    background: url('icons/delete.png');
+    background-repeat:no-repeat;
+    background-position:center; 
+}
+
+.tick {
+    background: url('icons/tick.png');
+    background-repeat:no-repeat;
+    background-position:center; 
+}
+
+.emailTech {
+    background: url('icons/email_go.png');
+}
+
+.myattendanceIcon {
+    background: url('icons/report_edit.png');
+}
+
+.mytrainingIcon {
+    background: url('icons/user_red.png');
+}
+
+.registrationsIcon {
+    background: url('icons/leaf.png');
+}
+
+.supervisorreportsIcon {
+    background: url('icons/asterisk_orange.png');
+}
+
+.adminreportsIcon {
+    background: url('icons/chart_pie.png');
+}
+
+.logoutIcon {
+    background: url('icons/cross-shield.png');
+}
+
+.homeIcon {
+    background: url('icons/home.png');
+}
+
+.foo  div a span
+{
+
+    -moz-box-shadow:inset 0px 1px 0px 0px #fed897;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #fed897;
+	box-shadow:inset 0px 1px 0px 0px #fed897;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f6b33d), color-stop(1, #d29105) );
+	background:-moz-linear-gradient( center top, #f6b33d 5%, #d29105 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6b33d', endColorstr='#d29105');
+	background-color:#f6b33d !important;
+
+	-webkit-border-top-left-radius:0px !important;
+	-moz-border-radius-topleft:0px !important;
+	border-top-left-radius:0px !important;
+	-webkit-border-top-right-radius:0px !important;
+	-moz-border-radius-topright:0px !important;
+	border-top-right-radius:0px !important;
+	-webkit-border-bottom-right-radius:0px !important;
+	-moz-border-radius-bottomright:0px !important;
+	border-bottom-right-radius:0px !important;
+	-webkit-border-bottom-left-radius:0px !important;
+	-moz-border-radius-bottomleft:0px !important;
+	border-bottom-left-radius:0px !important;
+	text-indent:0 !important;
+	border:1px solid #eeb44f !important;
+	display:inline-block;
+	color:#ffffff !important;
+	font-family:Arial !important;
+	font-size:12px !important;
+	font-weight:bold !important;
+	font-style:normal !important;
+	height:40px;
+	line-height:40px;
+	text-decoration:none;
+	text-align:center !important;
+	text-shadow:1px 1px 0px #cc9f52 !important;
+}
+.tabstyle  .x-tab-inner .x-tab-inner-center {
+		color: red !important;
+		font-size: 13px !important;
+	}
+
+
+
+/*Support for multi row grid column */
+
+/*
+.x-grid-row .x-grid-cell-inner {
+    white-space: normal;
+}
+.x-grid-row-over .x-grid-cell-inner {
+    color: #4096EE;
+    white-space: normal;
+}
+*/
+
+

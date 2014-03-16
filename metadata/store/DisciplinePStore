@@ -1,0 +1,15 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": false,
+        "designer|userClassName": "DisciplinePStore",
+        "model": "DisciplineData",
+        "storeId": "DisciplinePStore"
+    },
+    "designerId": "05b006ee-c54f-4667-9088-2caee8ae987e"
+}

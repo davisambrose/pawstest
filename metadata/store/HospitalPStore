@@ -1,0 +1,22 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": false,
+        "designer|userClassName": "HospitalPStore",
+        "model": "Hospitals",
+        "storeId": "HospitalPStore"
+    },
+    "designerId": "9ecad8f8-79e0-4759-b089-6aad726906c2",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "auto",
+            "type": "string"
+        }
+    ]
+}

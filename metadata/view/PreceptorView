@@ -1,0 +1,780 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "bodyBorder": false,
+        "container|align": "stretch",
+        "designer|userAlias": "preceptorview",
+        "designer|userClassName": "PreceptorView",
+        "height": null,
+        "iconCls": null,
+        "layout": "hbox",
+        "overflowX": "scroll",
+        "overflowY": "scroll",
+        "title": "My Panel",
+        "width": null
+    },
+    "designerId": "001a2289-54e0-4f2c-8675-f8a854271140",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoScroll": true,
+                "container|align": "stretch",
+                "dock": null,
+                "frame": true,
+                "height": null,
+                "icon": null,
+                "iconCls": null,
+                "layout": "hbox",
+                "layout|flex": 1.5,
+                "title": null
+            },
+            "designerId": "3a99f20d-0691-42b6-96fe-25190eab286e",
+            "cn": [
+                {
+                    "type": "Ext.grid.Panel",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "autoScroll": true,
+                        "columnLines": true,
+                        "dock": "top",
+                        "forceFit": true,
+                        "frame": true,
+                        "height": 150,
+                        "iconCls": "homeIcon",
+                        "itemId": "PreceptorList",
+                        "layout|flex": 2,
+                        "store": "PreceptorDataStore",
+                        "title": "Preceptor List"
+                    },
+                    "designerId": "427f20b1-8f6c-470b-b29d-a9ee3b3a0213",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.View",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 400
+                            },
+                            "designerId": "ffa082af-6068-4e6e-b372-978bb204945a"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "lastname",
+                                "defaultWidth": null,
+                                "id": null,
+                                "itemId": null,
+                                "text": "Lastname",
+                                "width": 200
+                            },
+                            "designerId": "666eacdc-fed7-4b3f-805c-38d50d4a4131"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "firstname",
+                                "text": "Firstname"
+                            },
+                            "designerId": "7440a3c8-80e0-4430-adb2-49e7fe08bee7"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "city",
+                                "text": "City"
+                            },
+                            "designerId": "636a158c-5706-4048-8851-e21422ef25f6"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "isactive",
+                                "text": "Isactive",
+                                "width": 60
+                            },
+                            "designerId": "f9a3b5c2-a08f-423a-b20d-a7d4e02d152f"
+                        },
+                        {
+                            "type": "Ext.toolbar.Paging",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "displayInfo": true,
+                                "dock": "bottom",
+                                "store": "PreceptorDataStore",
+                                "width": 360
+                            },
+                            "designerId": "5600cd6b-acce-44c6-b242-c106a450d21c"
+                        },
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onGridpanelSelect1",
+                                "implHandler": [
+                                    "\r",
+                                    "\r",
+                                    "var DisciplineGrid = this.down('#DisciplinePGrid');\r",
+                                    "var qData = record.get('precepdiscp');\r",
+                                    "if (qData !== null) {\r",
+                                    "    DisciplineGrid.store.loadData(qData);\r",
+                                    "} else {\r",
+                                    "    DisciplineGrid.store.clearData();\r",
+                                    "    DisciplineGrid.view.refresh();\r",
+                                    "}\r",
+                                    "\r",
+                                    "\r",
+                                    "var HospitalGrid = this.down('#HospitalPGrid');\r",
+                                    "var hData = record.get('hospitals');\r",
+                                    "if (hData !== null) {\r",
+                                    "    HospitalGrid.store.loadData(hData);\r",
+                                    "} else {\r",
+                                    "    HospitalGrid.store.clearData();\r",
+                                    "    HospitalGrid.view.refresh();\r",
+                                    "}\r",
+                                    ""
+                                ],
+                                "name": "select",
+                                "scope": "me"
+                            },
+                            "designerId": "cbce1c34-0f7d-45a5-b161-2b99021cde10"
+                        },
+                        {
+                            "type": "Ext.grid.column.Action",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "defaultWidth": null,
+                                "designer|displayName": "PreceptorDelete",
+                                "width": 30
+                            },
+                            "designerId": "ced31453-a5d8-4eda-be62-8a94e8c32b04",
+                            "cn": [
+                                {
+                                    "type": "actioncolumnitem",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "iconCls": "deleteGrid"
+                                    },
+                                    "designerId": "4082c19f-be3c-4e05-8ad6-f62808892bae",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "view",
+                                                    "rowIndex",
+                                                    "colIndex",
+                                                    "item",
+                                                    "e",
+                                                    "record",
+                                                    "row"
+                                                ],
+                                                "fn": "handler",
+                                                "implHandler": [
+                                                    " //var rec = grid.getStore().getAt(rowIndex);\r",
+                                                    "                    Ext.Msg.confirm('Confirm Action', 'Do you really want to remove this Location?', function(btn) {\r",
+                                                    "                        if(btn == 'yes'){\r",
+                                                    "                            var store = Ext.getStore('PreceptorDataStore');\r",
+                                                    "                            store.remove(record);\r",
+                                                    "                      // this.fireEvent('deleteUserClick',  record,'destroy');\r",
+                                                    "                            return true;\r",
+                                                    "                        }\r",
+                                                    "                      }, this);\r",
+                                                    "                            return false;"
+                                                ]
+                                            },
+                                            "designerId": "aea16115-0ae6-40bd-b015-ca92ee1ad47f"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onGridpanelSelectionChange",
+                                "implHandler": [
+                                    "if (selected.length <= 0) {\r",
+                                    "\r",
+                                    "    var DisciplineGrid = this.down('#DisciplinePGrid');\r",
+                                    "    DisciplineGrid.store.clearData();\r",
+                                    "    DisciplineGrid.view.refresh();\r",
+                                    "\r",
+                                    "\r",
+                                    "    var HospitalGrid = this.down('#HospitalPGrid');\r",
+                                    "    HospitalGrid.store.clearData();\r",
+                                    "    HospitalGrid.view.refresh();\r",
+                                    "    return;\r",
+                                    "\r",
+                                    "}"
+                                ],
+                                "name": "selectionchange",
+                                "scope": "me"
+                            },
+                            "designerId": "47df3047-1163-4504-ba4f-03782f5052e8"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.Panel",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|createAlias": null,
+                        "dock": "top",
+                        "forceFit": true,
+                        "height": 150,
+                        "id": null,
+                        "itemId": "DisciplinePGrid",
+                        "layout|flex": 1,
+                        "manageHeight": false,
+                        "store": "DisciplinePStore",
+                        "title": "Linked Disciplines"
+                    },
+                    "designerId": "36f3bd10-76bf-4518-83fa-aac7b53102cf",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.View",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "designerId": "500994cd-d4fb-4226-abe0-233bb20e11df"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "discipline",
+                                "flex": 8,
+                                "text": "Discipline",
+                                "width": null
+                            },
+                            "designerId": "50dbe8d5-8cd8-4785-b3a3-1885950fef55"
+                        },
+                        {
+                            "type": "Ext.toolbar.Paging",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "displayInfo": true,
+                                "dock": "bottom",
+                                "store": "DisciplinePStore",
+                                "width": 360
+                            },
+                            "designerId": "015054b0-16ef-4f9f-bd73-073ff2bd48d4"
+                        },
+                        {
+                            "type": "Ext.toolbar.Toolbar",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dock": "top"
+                            },
+                            "designerId": "5489fee6-4f64-4325-92bb-01f3dda7ae09",
+                            "cn": [
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "iconCls": "user_add",
+                                        "itemId": "mybutton3",
+                                        "layout|flex": null,
+                                        "text": "Link Disciplines"
+                                    },
+                                    "designerId": "b8939271-291d-4712-8331-93e7d537da4e"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.grid.column.Action",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "align": "center",
+                                "designer|displayName": "DisciplineDelete",
+                                "flex": 1,
+                                "iconCls": null,
+                                "menuText": null,
+                                "tooltip": "Delete a Discipline",
+                                "width": null
+                            },
+                            "designerId": "27c66dee-4926-4c28-b83b-9c415dea7d92",
+                            "cn": [
+                                {
+                                    "type": "actioncolumnitem",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "deleteDiscipline",
+                                        "iconCls": "deleteGrid"
+                                    },
+                                    "designerId": "77ec290e-851d-486f-8d18-01ecc2df40b1",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "view",
+                                                    "rowIndex",
+                                                    "colIndex",
+                                                    "item",
+                                                    "e",
+                                                    "record",
+                                                    "row"
+                                                ],
+                                                "fn": "handler",
+                                                "implHandler": [
+                                                    "     Ext.Msg.confirm('Confirm Action', 'Do you really want to remove this discipline link?', function(btn) {\r",
+                                                    "                        if(btn == 'yes'){\r",
+                                                    "                            var store = Ext.getStore('DisciplinePStore');\r",
+                                                    "                            store.remove(record);\r",
+                                                    "                            return true;\r",
+                                                    "                        }\r",
+                                                    "                      }, this);\r",
+                                                    "                            return false;"
+                                                ]
+                                            },
+                                            "designerId": "7a98b851-a561-4762-87a7-d14034d5c2c4"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.grid.column.Action",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "align": "center",
+                                "designer|displayName": "DisciplineAdd",
+                                "flex": 1,
+                                "menuText": null,
+                                "tooltip": "Link a discipline",
+                                "width": null
+                            },
+                            "designerId": "fc448270-80ad-4d94-8f12-508326383455",
+                            "cn": [
+                                {
+                                    "type": "actioncolumnitem",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "iconCls": "user_add"
+                                    },
+                                    "designerId": "9ca18d67-c63d-4226-bd7c-6cb6a71f7985",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "view",
+                                                    "rowIndex",
+                                                    "colIndex",
+                                                    "item",
+                                                    "e",
+                                                    "record",
+                                                    "row"
+                                                ],
+                                                "fn": "handler",
+                                                "implHandler": [
+                                                    "     Ext.Msg.confirm('Confirm Action', 'Do you really want to add a new discipline to this preceptor?', function(btn) {\r",
+                                                    "                        if(btn == 'yes'){\r",
+                                                    "                            var store = Ext.getStore('PreceptorDataStore');\r",
+                                                    "                            //store.remove(record);\r",
+                                                    "                      // this.fireEvent('deleteUserClick',  record,'destroy');\r",
+                                                    "                            return true;\r",
+                                                    "                        }\r",
+                                                    "                      }, this);\r",
+                                                    "                            return false;"
+                                                ]
+                                            },
+                                            "designerId": "15202065-4624-4117-892f-0b9dc47dc8ce"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onDisciplinePGridItemDblClick",
+                                "implHandler": [
+                                    "\r",
+                                    "var view = Ext.widget('preceptordiscipline');\r",
+                                    "console.log(view);\r",
+                                    "view.down('form').loadRecord(record);\r",
+                                    "view.show();\r",
+                                    ""
+                                ],
+                                "name": "itemdblclick",
+                                "scope": "me"
+                            },
+                            "designerId": "51095b10-b450-4dbf-868a-4e181cd8a44d"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "forceFit": true,
+                        "height": 150,
+                        "itemId": "HospitalPGrid",
+                        "layout|flex": 1,
+                        "manageHeight": false,
+                        "store": "HospitalPStore",
+                        "title": "Linked Hospitals"
+                    },
+                    "designerId": "88c1c21b-f53c-45a3-960d-e03361dcf0e2",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.View",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "itemId": "mygridview2"
+                            },
+                            "designerId": "f5abc949-78db-4ce7-8f82-4f0925acd1cc"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "name",
+                                "flex": 8,
+                                "text": "Hospital",
+                                "width": null
+                            },
+                            "designerId": "5fa2f04f-04bf-4ee6-a175-67141068e869"
+                        },
+                        {
+                            "type": "Ext.toolbar.Paging",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "displayInfo": true,
+                                "dock": "bottom",
+                                "store": "HospitalPStore",
+                                "width": 360
+                            },
+                            "designerId": "a657674f-3a1d-43f7-80b7-179414bfbf6b"
+                        },
+                        {
+                            "type": "Ext.toolbar.Toolbar",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dock": "top"
+                            },
+                            "designerId": "e76fa334-ac09-4f84-ace8-6d7927faae4d",
+                            "cn": [
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "iconCls": "user_add",
+                                        "itemId": "mybutton4",
+                                        "layout|flex": null,
+                                        "text": "Link Hospital"
+                                    },
+                                    "designerId": "71cad2ec-4065-4f40-8ede-96b2943be67a"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.grid.column.Action",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "align": "center",
+                                "altText": null,
+                                "designer|displayName": "DeleteHospital",
+                                "emptyCellText": null,
+                                "flex": 1,
+                                "width": null
+                            },
+                            "designerId": "5f0397d1-097d-49e6-8f5c-e38393c128fd",
+                            "cn": [
+                                {
+                                    "type": "actioncolumnitem",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "iconCls": "deleteGrid"
+                                    },
+                                    "designerId": "a9b6b4ac-1d60-4756-b181-de8b37279074",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "view",
+                                                    "rowIndex",
+                                                    "colIndex",
+                                                    "item",
+                                                    "e",
+                                                    "record",
+                                                    "row"
+                                                ],
+                                                "fn": "handler",
+                                                "implHandler": [
+                                                    "     Ext.Msg.confirm('Confirm Action', 'Do you really want to remove this Hospital link?', function(btn) {\r",
+                                                    "                        if(btn == 'yes'){\r",
+                                                    "                            var store = Ext.getStore('HospitalPStore');\r",
+                                                    "                            store.remove(record);\r",
+                                                    "                            return true;\r",
+                                                    "                        }\r",
+                                                    "                      }, this);\r",
+                                                    "                            return false;"
+                                                ]
+                                            },
+                                            "designerId": "f7add221-ab4d-4cb4-8962-a19878e070da"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.grid.column.Action",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "align": "center",
+                                "designer|displayName": "AddHospital",
+                                "flex": 1,
+                                "width": null
+                            },
+                            "designerId": "4b59ff94-f689-41c7-b9a3-a7b67b5af158",
+                            "cn": [
+                                {
+                                    "type": "actioncolumnitem",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "iconCls": "user_add"
+                                    },
+                                    "designerId": "967f2236-ad34-4110-93a4-6fe332580ed5",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "view",
+                                                    "rowIndex",
+                                                    "colIndex",
+                                                    "item",
+                                                    "e",
+                                                    "record",
+                                                    "row"
+                                                ],
+                                                "fn": "handler",
+                                                "implHandler": [
+                                                    "     Ext.Msg.confirm('Confirm Action', 'Do you really want to Add Hospital?', function(btn) {\r",
+                                                    "                        if(btn == 'yes'){\r",
+                                                    "                            var store = Ext.getStore('HospitalPStore');\r",
+                                                    "\r",
+                                                    "                            return true;\r",
+                                                    "                        }\r",
+                                                    "                      }, this);\r",
+                                                    "                            return false;"
+                                                ]
+                                            },
+                                            "designerId": "10f77b50-5ec2-4903-a238-82a9cffca025"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "stretch",
+                "layout": "vbox",
+                "layout|flex": 2,
+                "title": null
+            },
+            "designerId": "bad0a6d1-38d4-45db-b642-b34dbe977240",
+            "cn": [
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|createAlias": "preceptorform",
+                        "dock": "top",
+                        "height": null,
+                        "iconCls": "homeIcon",
+                        "itemId": "PreceptorViewForm",
+                        "layout|flex": 1,
+                        "title": "Preceptor Edit/Insert"
+                    },
+                    "designerId": "b63c79fb-b34e-4410-8e99-67d99a5f9b51"
+                }
+            ]
+        }
+    ]
+}

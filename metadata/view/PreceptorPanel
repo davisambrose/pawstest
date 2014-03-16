@@ -1,0 +1,90 @@
+{
+    "type": "Ext.tab.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "activeTab": 0,
+        "designer|userAlias": "preceptorpanel",
+        "designer|userClassName": "PreceptorPanel",
+        "height": 250,
+        "width": null
+    },
+    "designerId": "8f43282a-04c3-4e77-97ca-234159cc3502",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|createAlias": "preceptorview",
+                "title": "Preceptor"
+            },
+            "designerId": "31f51ffb-9267-4c11-b40c-a84bd9c11e4a",
+            "cn": [
+                {
+                    "type": "Ext.tab.Tab",
+                    "reference": {
+                        "name": "tabConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "dc7155f6-f669-4e4d-9290-8b234a49d0ed"
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|createAlias": "preceptorview",
+                "title": "Hospital"
+            },
+            "designerId": "eee46da7-2ed8-466b-bf5d-6cd67258884d",
+            "cn": [
+                {
+                    "type": "Ext.tab.Tab",
+                    "reference": {
+                        "name": "tabConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "95dc89f5-2639-449d-872e-d9692fe25406"
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Discipline",
+                "width": 398
+            },
+            "designerId": "70639244-04a4-45d1-815c-dbcbb26b8b44",
+            "cn": [
+                {
+                    "type": "Ext.tab.Tab",
+                    "reference": {
+                        "name": "tabConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "f7a3f9f6-6943-4593-942d-d5497c61bd1f"
+                }
+            ]
+        }
+    ]
+}

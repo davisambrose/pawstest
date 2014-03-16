@@ -1,0 +1,40 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "designer|userClassName": "HospitalComboStore",
+        "model": "Hospitals",
+        "storeId": "HospitalComboStore"
+    },
+    "designerId": "d1ecdc17-0234-4b71-9e01-55c04a312a72",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "/pawu/hospitalws/hospitallist"
+            },
+            "designerId": "3ecfcaa1-637c-4cfb-9ac3-042020a1a38e",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "5319d659-0289-4be6-b180-25f44e4c5128"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "controllers": [
+            "Preceptors"
+        ],
+        "models": [
+            "PreceptorData",
+            "DisciplineData",
+            "Hospitals"
+        ],
+        "name": "pawu",
+        "stores": [
+            "PreceptorDataStore",
+            "DisciplinePStore",
+            "HospitalPStore",
+            "HospitalComboStore",
+            "PreceptorComboStore"
+        ],
+        "views": [
+            "MyViewport",
+            "PreceptorView",
+            "PreceptorForm",
+            "PreceptorHospital",
+            "PreceptorPanel",
+            "PreceptorDiscipline"
+        ]
+    },
+    "designerId": "application"
+}

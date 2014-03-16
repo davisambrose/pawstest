@@ -1,0 +1,370 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Preceptors",
+        "stores": [
+            "PreceptorDataStore"
+        ],
+        "views": [
+            "PreceptorView",
+            "PreceptorForm"
+        ]
+    },
+    "designerId": "4ce420f5-87aa-4434-9729-8677afa4b4c3",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "PreceptorForm",
+                "refs": null,
+                "selector": "#PreceptorViewForm",
+                "xtype": "Ext.form.Panel"
+            },
+            "designerId": "dbbca6a1-c64b-4c96-9211-93e063a11c61",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "refs",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "gridpanel",
+                "designer|targetType": "Ext.grid.Panel",
+                "fn": "onGridpanelSelectionChange",
+                "implHandler": [
+                    "if (selected.length <= 0) {\r",
+                    "    this.getPreceptorForm().getForm().reset();\r",
+                    "\t\t\t\t\treturn;\r",
+                    "\t\t\t\t}\r",
+                    "this.getPreceptorForm().getForm().loadRecord(selected[0]);"
+                ],
+                "name": "selectionchange",
+                "scope": "me"
+            },
+            "designerId": "6f65d5b0-f58f-4025-8939-9e419dab869a"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#mybutton",
+                "designer|targetType": "Ext.button.Button",
+                "fn": "saveData",
+                "implHandler": [
+                    "alert('test');"
+                ],
+                "name": "click",
+                "scope": "me"
+            },
+            "designerId": "6a08e3b4-40c5-4cb7-9ad5-a3e19fbc7988"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#mybutton3",
+                "designer|targetType": "Ext.button.Button",
+                "fn": "addDiscipline",
+                "implHandler": [
+                    "alert('add new discipline button clicked');"
+                ],
+                "name": "click",
+                "scope": "me"
+            },
+            "designerId": "255ed166-03cf-4a16-bcb2-108c1a220d9f"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#mybutton4",
+                "designer|targetType": "Ext.button.Button",
+                "fn": "addHospital",
+                "implHandler": [
+                    "\r",
+                    "var view = Ext.widget('preceptorhospital');\r",
+                    "view.show();"
+                ],
+                "name": "click",
+                "scope": "me"
+            },
+            "designerId": "cb1a02e2-c1c4-48f5-b8a0-87c215c49b93"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#mybutton5",
+                "designer|targetType": "Ext.button.Button",
+                "fn": "precHospSave",
+                "implHandler": [
+                    "//var form = button.up('form').getForm\r",
+                    "var win = button.up('window');\r",
+                    "var form = win.down('form');\r",
+                    "\r",
+                    "console.log(form.getValues());\r",
+                    "\t\t\t\tif (form.isValid()) {\r",
+                    "\t\t\t\t\t//create an AJAX request\r",
+                    "\t\t\t\t\tExt.Ajax.request({\r",
+                    "\t\t\t\t\t\turl : 'courseupdate.jsp',\r",
+                    "\t\t\t\t\t\tmethod : 'POST',\r",
+                    "\t\t\t\t\t\tparams : {\r",
+                    "\t\t\t\t\t\t\tloginData : Ext.encode(form.getValues())\r",
+                    "\t\t\t\t\t\t},\r",
+                    "\t\t\t\t\t\tscope : this,\r",
+                    "\t\t\t\t\t\t//method to call when the request is successful\r",
+                    "\t\t\t\t\t\tsuccess : this.onSaveSuccess,\r",
+                    "\t\t\t\t\t\t//method to call when the request is a failure\r",
+                    "\t\t\t\t\t\tfailure : this.onSaveFailure\r",
+                    "\t\t\t\t\t});\r",
+                    "\t\t\t\t}"
+                ],
+                "name": "click",
+                "scope": "me"
+            },
+            "designerId": "72e743c2-c321-4a82-8452-e1fc935833ef"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#mygridview2",
+                "designer|targetType": "Ext.grid.View",
+                "fn": "onHospitalEdit",
+                "implHandler": [
+                    "var view = Ext.widget('preceptorhospital');\r",
+                    "view.down('form').loadRecord(record);\r",
+                    "view.show();"
+                ],
+                "name": "itemdblclick",
+                "scope": "me"
+            },
+            "designerId": "07601fed-3240-4184-9133-007154fa7826"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "preceptorHospital",
+                "selector": "preceptorhospital"
+            },
+            "designerId": "5ef52756-c7be-4e23-8198-a28c821f4efa"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#mybutton6",
+                "designer|targetType": "Ext.button.Button",
+                "fn": "onDisciplineEdit",
+                "implHandler": [
+                    "\r",
+                    "var win = button.up('window');\r",
+                    "var form = win.down('form');\r",
+                    "values = form.getValues();\r",
+                    "//store=Ext.getStore('DisciplinePStore');\r",
+                    "//store.add(values);\r",
+                    "\r",
+                    "//this.getDisciplineModel().save();\r",
+                    "\r",
+                    "\r",
+                    "\r",
+                    "if (form.isValid()) {\r",
+                    "    //create an AJAX request\r",
+                    "\r",
+                    "    Ext.Ajax.request({\r",
+                    "        url: '/pawu/preceptorws/disciplineupdate',\r",
+                    "        method: 'POST',\r",
+                    "        contentType: \"application/json\",\r",
+                    "\r",
+                    "        jsonData: Ext.encode(form.getValues()),\r",
+                    "\r",
+                    "        scope: this,\r",
+                    "        //method to call when the request is successful\r",
+                    "        success: this.onSaveSuccess,\r",
+                    "        //method to call when the request is a failure\r",
+                    "        failure: this.onSaveFailure\r",
+                    "    });\r",
+                    "\r",
+                    "    win.close();\r",
+                    "}\r",
+                    ""
+                ],
+                "name": "click",
+                "scope": "me"
+            },
+            "designerId": "4233da6c-d01d-4227-b46d-2ac4411452bc"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "err"
+                ],
+                "fn": "onSaveFailure",
+                "implHandler": [
+                    "Ext.MessageBox.alert('Error occured during Database Save');"
+                ]
+            },
+            "designerId": "978e1377-d6c2-4ab6-b92b-484bf5bd7b00"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "response",
+                    "opts"
+                ],
+                "fn": "onSaveSuccess",
+                "implHandler": [
+                    "response = Ext.decode(response.responseText);\r",
+                    "if (response.success) {\r",
+                    "    Ext.MessageBox.alert('Successful', response.message); \r",
+                    "    \r",
+                    "    \r",
+                    "    var store2 = Ext.getStore('PreceptorDataStore');\r",
+                    "    \r",
+                    "    store2.load();\r",
+                    "    \r",
+                    "    //var store=Ext.getStore('DisciplinePStore');\r",
+                    "    //store.sync();\r",
+                    "    //store.reload();\r",
+                    "    \r",
+                    "    // var grid = button.up('grid');\r",
+                    "    //var store = grid.getStore();\r",
+                    "    //var selected = grid.getSelectionModel().getSelection();\r",
+                    "\r",
+                    "    \r",
+                    "    \r",
+                    "    var myGrid = Ext.ComponentQuery.query('#DisciplinePGrid')[0].getView();\r",
+                    "    console.log(myGrid);\r",
+                    "    \r",
+                    "    var myGrid2 = Ext.ComponentQuery.query('#PreceptorList')[0].getView();\r",
+                    "    console.log(myGrid2.getSelectionModel().getSelection().get('id').value);\r",
+                    "    myGrid2.store.clearData();\r",
+                    "    myGrid2.view.refresh();\r",
+                    "   // myGrid.refresh();\r",
+                    "    \r",
+                    "    \r",
+                    "    //myGrid.reconfigure(PreceptorDataStore.getAt(0).precepdiscp());\r",
+                    "     \r",
+                    "    \r",
+                    "    //var pform = Ext.ComponentQuery.query('#PreceptorForm')[0];\r",
+                    "    //console.log(pform.getForm().getValues());\r",
+                    "    \r",
+                    "    //var myGrid = Ext.ComponentQuery.query('#DisciplinePGrid')[0];\r",
+                    "    //console.log(myGrid.getView());\r",
+                    "    \r",
+                    "    \r",
+                    "    //myGrid.getView().store.load();\r",
+                    "    // var view = Ext.widget('preceptorview');\r",
+                    "     //console.log(view.down('grid'));\r",
+                    "    \r",
+                    "    \r",
+                    " /**   \r",
+                    "    var x = Ext.ComponentQuery.query(\"preceptorview #DisciplinePGrid\");\r",
+                    "    console.log(x.getView());\r",
+                    "    \r",
+                    "    \r",
+                    "    \r",
+                    "    var store2 = Ext.getStore('PreceptorDataStore');\r",
+                    "    console.log(store2);\r",
+                    "    store2.load();\r",
+                    "    var store=Ext.getStore('DisciplinePStore');\r",
+                    "    console.log(store);\r",
+                    "    store.load();\r",
+                    " **/   \r",
+                    "\r",
+                    "} else {\r",
+                    "    Ext.MessageBox.alert('Database update failed',\r",
+                    "        response.message);\r",
+                    "}"
+                ]
+            },
+            "designerId": "7ee3551a-e491-4f0e-adab-60b5e914fcde"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "preceptorView",
+                "selector": "#preceptorview"
+            },
+            "designerId": "fe165620-1ed6-48c2-b704-ada04c95b1ad"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "disciplineModel",
+                "selector": "DisciplineData"
+            },
+            "designerId": "7d6bb961-92b2-4ea7-98f2-82d5a6f8160c"
+        }
+    ]
+}

@@ -1,0 +1,94 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "preceptordiscipline",
+        "designer|userClassName": "PreceptorDiscipline",
+        "height": 250,
+        "title": "My Window",
+        "width": 550
+    },
+    "designerId": "ad8e64e5-3bdb-4b28-b07f-557bcca53633",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "title": "My Form"
+            },
+            "designerId": "922393d1-6e07-4ae9-9828-ac52dfe80056",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "PreceptorID",
+                        "fieldLabel": "Preceptor ID",
+                        "layout|anchor": "100%",
+                        "name": "pid"
+                    },
+                    "designerId": "83c02a0c-d5a9-41b1-9872-828fdd7565ed"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "DisciplineID",
+                        "fieldLabel": "Preceptor Discp ID",
+                        "layout|anchor": "100%",
+                        "name": "precdiscid"
+                    },
+                    "designerId": "24378bcf-b278-4131-be57-5b5d448929f1"
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "DiscID",
+                        "displayField": "name",
+                        "fieldLabel": "Discipline ID",
+                        "name": "discid",
+                        "store": "PreceptorComboStore",
+                        "valueField": "discid",
+                        "width": 400
+                    },
+                    "designerId": "986a246f-e602-4e00-98ea-916c5e118e98"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "mybutton6",
+                        "text": "Save"
+                    },
+                    "designerId": "7be7bc24-fdd4-4e2e-ac8c-cf79000be0f8"
+                }
+            ]
+        }
+    ]
+}

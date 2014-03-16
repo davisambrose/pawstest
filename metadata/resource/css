@@ -1,0 +1,14 @@
+{
+    "type": "cssresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "css",
+        "id": "ext-custom.css",
+        "url": "resources/css/ext-custom.css"
+    },
+    "designerId": "86601595-a883-4fce-a0bf-8e865eebdc7e"
+}

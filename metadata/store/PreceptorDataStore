@@ -1,0 +1,71 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "designer|userClassName": "PreceptorDataStore",
+        "model": "PreceptorData",
+        "pageSize": 10,
+        "remoteSort": true,
+        "storeId": "PreceptorDataStore"
+    },
+    "designerId": "62d8f269-6c59-47f4-be04-255a81d6e415",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "auto",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "/pawu/preceptorws/preceptorlist"
+            },
+            "designerId": "2d6b969b-7c3d-4409-b101-7599c1ecf947",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "items"
+                    },
+                    "designerId": "2d03efe6-3c03-40ff-b76a-524112812634"
+                }
+            ]
+        },
+        {
+            "type": "Ext.util.Sorter",
+            "reference": {
+                "name": "sorters",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "property": "lastname"
+            },
+            "designerId": "0ba0e332-1952-4831-84b1-010fcd7e9048",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "sorters",
+                    "type": "string"
+                }
+            ]
+        }
+    ]
+}

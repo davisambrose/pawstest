@@ -1,0 +1,70 @@
+{
+    "name": "rotations",
+    "settings": {
+        "cmd": {
+            "license": "commercial",
+            "cmdVersion": "4.0.1.45",
+            "frameworkVersion": "4.2.1.883"
+        },
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Auto Expand",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            }
+        },
+        "urlPrefix": "http://localhost:8080/pawu/rotations",
+        "exportPath": "",
+        "spacesToIndent": 4,
+        "sdkPath": "",
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true,
+        "lastBuildSelection": {
+            "value": "webBuild",
+            "display": "Build web app"
+        }
+    },
+    "xdsVersion": "3.0.2",
+    "xdsBuild": 1375,
+    "schemaVersion": 1,
+    "upgradeVersion": 300000000004,
+    "framework": "ext42",
+    "viewOrderMap": {
+        "view": [
+            "c8538acb-e01e-421b-a3ff-fa7c353ea28a",
+            "001a2289-54e0-4f2c-8675-f8a854271140",
+            "92c9af6a-08a1-422c-9c99-6eb43a026045",
+            "5639ac59-c010-415d-89c2-7503c20105b0",
+            "8f43282a-04c3-4e77-97ca-234159cc3502",
+            "ad8e64e5-3bdb-4b28-b07f-557bcca53633"
+        ],
+        "store": [
+            "62d8f269-6c59-47f4-be04-255a81d6e415",
+            "05b006ee-c54f-4667-9088-2caee8ae987e",
+            "9ecad8f8-79e0-4759-b089-6aad726906c2",
+            "d1ecdc17-0234-4b71-9e01-55c04a312a72",
+            "62fe736c-a807-4f75-8013-677d0646e2d4"
+        ],
+        "controller": [
+            "4ce420f5-87aa-4434-9729-8677afa4b4c3"
+        ],
+        "model": [
+            "7fa65082-4248-41ea-ab58-d1ce9a3d513b",
+            "aca64d1d-3705-4596-98f4-7bee0b32285a",
+            "0e5bec67-ce7e-4f09-b27d-d6c28ec9299e"
+        ],
+        "resource": [
+            "2ddfd6e9-34b6-42e2-8a2f-f1b7db059e44",
+            "557ed085-5643-4755-a0d4-277b0c3a064a",
+            "fc7a3e21-bbae-4510-9acb-9d35b89be029",
+            "86601595-a883-4fce-a0bf-8e865eebdc7e"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

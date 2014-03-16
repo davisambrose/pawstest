@@ -1,0 +1,80 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "preceptorhospital",
+        "designer|userClassName": "PreceptorHospital",
+        "height": 250,
+        "title": "My Window",
+        "width": 562
+    },
+    "designerId": "5639ac59-c010-415d-89c2-7503c20105b0",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "title": "My Form"
+            },
+            "designerId": "74882654-79fc-4dfc-a141-1b0459d93166",
+            "cn": [
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "displayField": "name",
+                        "fieldLabel": "Hospital",
+                        "name": "id",
+                        "queryMode": "local",
+                        "store": "HospitalComboStore",
+                        "valueField": "id",
+                        "width": 532
+                    },
+                    "designerId": "9f4d5971-a64b-44c6-a31b-ea0d845e9323"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "Submit",
+                        "itemId": "mybutton5",
+                        "text": "Submit"
+                    },
+                    "designerId": "03d7e316-25e7-4145-a43c-2661edea09ee"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Preceptor",
+                        "layout|anchor": "100%",
+                        "name": "pid"
+                    },
+                    "designerId": "d141ae4d-7112-4570-84e8-64f7d707d112"
+                }
+            ]
+        }
+    ]
+}

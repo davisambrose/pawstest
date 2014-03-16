@@ -1,0 +1,159 @@
+{
+    "type": "Ext.container.Viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|initialView": true,
+        "designer|userClassName": "MyViewport",
+        "html": null
+    },
+    "designerId": "c8538acb-e01e-421b-a3ff-fa7c353ea28a",
+    "cn": [
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "html": [
+                    "\r",
+                    "<div id=wuheader>\r",
+                    "<a href=\"http://www.westernu.edu\" target=\"_new\" id=\"wulogo\" title=\"Western University of Health Sciences\" alt=\"Western University of Health Sciences\">\r",
+                    "<img src=\"http://jprod.westernu.edu/cloud/sencha/wu_logo.png\" alt=\"Western University of Health Sciences\"/></a>\r",
+                    "<h1 class=\"wuheader\">Physician Assistant Program - Student Rotations Management</h1>\r",
+                    "</div>"
+                ]
+            },
+            "designerId": "d6e162a1-937c-4872-962e-6a2ac02d77db"
+        },
+        {
+            "type": "Ext.tab.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "activeTab": 0,
+                "bodyStyle": null,
+                "height": 700,
+                "style": null
+            },
+            "designerId": "3401ab77-f7ed-431e-9d20-4c13f53df947",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "tab",
+                    "type": "string"
+                }
+            ],
+            "cn": [
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "baseCls": null,
+                        "cls": "tabstyle",
+                        "designer|createAlias": "preceptorpanel",
+                        "title": "Data Management"
+                    },
+                    "designerId": "f3c0d409-b831-40d3-be22-510f298b5c85",
+                    "cn": [
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": "tabstyle"
+                            },
+                            "designerId": "678ca329-1dbe-49bb-ada4-baf170c3048d"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|createAlias": "preceptorpanel",
+                        "title": "Rotations Management"
+                    },
+                    "designerId": "e21f9877-be32-42ea-a79d-196f90697b44",
+                    "cn": [
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "designerId": "b6dddf74-aaca-4c3c-9549-7e4218107b91"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|createAlias": "preceptorform",
+                        "title": "Lottery Management"
+                    },
+                    "designerId": "3f69ccdb-b3de-459c-98ef-ced1353cb3af",
+                    "cn": [
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "designerId": "4a7c9669-372c-4db2-b99a-2bf03d9266ae"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "title": "Help Videos"
+                    },
+                    "designerId": "1139d530-35a2-485c-aae1-57070bf6ec9a",
+                    "cn": [
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "designerId": "91147957-f570-4ee3-bccb-f2a9b03bcc87"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+   "name": "pawu",
+   "requires": [],
+   "id": "342fc320-7fbb-483f-a4c6-e56d4694cbb1",
+   "resources": [
+      "resources/css/ext-custom.css"
+   ]
+}

@@ -1,0 +1,63 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "designer|userClassName": "PreceptorComboStore",
+        "storeId": "PreceptorComboStore"
+    },
+    "designerId": "62fe736c-a807-4f75-8013-677d0646e2d4",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "/pawu/disciplinews/disciplinelist"
+            },
+            "designerId": "814585c5-98bf-4207-9b11-b03f4a5ffbe1",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "58326b46-81a0-4da8-b364-2236b64cd70c"
+                }
+            ]
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "discid"
+            },
+            "designerId": "e61425e3-602c-4d3f-952a-2fa5486adf20"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "name"
+            },
+            "designerId": "e0d77a0c-89cf-4f94-b475-00b708d8c302"
+        }
+    ]
+}

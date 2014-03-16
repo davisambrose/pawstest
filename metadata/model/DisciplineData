@@ -1,0 +1,108 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": null,
+        "designer|userClassName": "DisciplineData",
+        "idProperty": "precdiscid"
+    },
+    "designerId": "aca64d1d-3705-4596-98f4-7bee0b32285a",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "discid"
+            },
+            "designerId": "71e6c9d3-efcb-4a8f-bb6e-ef168897e2a9"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "precdiscid"
+            },
+            "designerId": "eb8346fd-8626-4cb5-8125-841464c94502"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "discipline"
+            },
+            "designerId": "e9c05cbb-648a-45a1-a319-b84465696970"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "pid"
+            },
+            "designerId": "f84ecb2b-cf42-48bd-b513-0b21a8e26ff2"
+        },
+        {
+            "type": "Ext.data.association.BelongsTo",
+            "reference": {
+                "name": "belongsTo",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "belongsToPreceptorData",
+                "model": "PreceptorData"
+            },
+            "designerId": "0d294532-2c01-4e71-b1b2-df5e88b5ead2"
+        },
+        {
+            "type": "Ext.data.proxy.Rest",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "api": [
+                    "{\r",
+                    "\t\t\tcreate: '/paws/rotation/users.php?action=view',\r",
+                    "            update: '/paws/rotation/users.php?action=view',\r",
+                    "            destroy: '/orm_2/view/user/app/remote/app/controllers/users.php?action=destroy'\r",
+                    "\r",
+                    "\t\t}"
+                ],
+                "url": "/paws/rotation/users.php?action=view"
+            },
+            "designerId": "c63ebc42-4125-4b93-93c8-636d67d850e1",
+            "cn": [
+                {
+                    "type": "Ext.data.writer.Json",
+                    "reference": {
+                        "name": "writer",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "0881438a-2dee-4c68-b978-68d5e820e43a"
+                }
+            ]
+        }
+    ]
+}

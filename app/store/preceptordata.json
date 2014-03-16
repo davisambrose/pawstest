@@ -1,0 +1,177 @@
+[{
+         "id":9444,
+         "state":"CA",
+         "title":null,
+         "email":"jdoe@yahoo.com",
+         "campus":"Pomona",
+         "isactive":"Y",
+         "affil_year":0,
+         "lastname":"Doe",
+         "middlename":null,
+         "firstname":"John",
+         "degree":"MD",
+         "contact":"Joe",
+         "pref":"Dr.",
+         "address1":"309 E 2nd Street",
+         "address2":null,
+         "city":"Pomona",
+         "zip":"91766",
+         "phone1":"310-999-9999",
+         "phone2":null,
+         "fax":"310-343-3434",
+         "note":"This is a test",
+         "special":"Test again",
+         "initial_apptdate":"09/18/2012",
+         "mostrecent_apptdate":"11/14/2012",
+         "recredentialing_date":"10/09/2012",
+         "faculty_appointment":null,
+        "precepdiscp":[
+            {
+               "discid":102,
+               "precdiscid":1129,
+               "discipline":"Psychiatry",
+               "pid":1806
+            },
+	    {
+               "discid":82,
+               "precdiscid":1139,
+               "discipline":"Pediatrics",
+               "pid":1806
+            }
+         ],
+         "hospitals":[
+            {
+               "name":"Great Urgent Care",
+               "id":6889
+            },
+	    {
+               "name":"A Plus Urgent Care",
+               "id":6891
+            },
+	    {
+               "name":"10th Med Group",
+               "id":273
+            }
+         ]
+      },
+      {
+         "id":1806,
+         "state":"CA",
+         "title":"Physician Assistant",
+         "email":"rnixon@xyz.com",
+         "campus":null,
+         "isactive":"Y",
+         "affil_year":0,
+         "lastname":"Nixson",
+         "middlename":"K",
+         "firstname":"Richard",
+         "degree":"PAC",
+         "contact":"George",
+         "pref":"Mr.",
+         "address1":"1815 White House Road",
+         "address2":null,
+         "city":"Santa Ana",
+         "zip":"89030",
+         "phone1":"714-999-0000",
+         "phone2":"714-999-0000",
+         "fax":"714-999-3535",
+         "note":"This is just a test.",
+         "special":"Spanish-speaking only, prefer female students",
+         "initial_apptdate":"09/11/2012",
+         "mostrecent_apptdate":"09/11/2012",
+         "recredentialing_date":"09/11/2012",
+         "faculty_appointment":null,
+         "precepdiscp":[
+            {
+               "discid":86,
+               "precdiscid":1127,
+               "discipline":"Community Health",
+               "pid":1806
+            }
+         ],
+         "hospitals":[
+            {
+               "name":"Salud Clinica",
+               "id":882
+            }
+         ]
+      },
+      {
+         "id":2305,
+         "state":"NV",
+         "title":null,
+         "email":"jdoe2@westernu.edu",
+         "campus":null,
+         "isactive":"Y",
+         "affil_year":0,
+         "lastname":"Antony",
+         "middlename":null,
+         "firstname":"Arnold",
+         "degree":"MD",
+         "contact":"Test",
+         "pref":"Dr.",
+         "address1":"1815 abc street",
+         "address2":null,
+         "city":"N. Las Vegas",
+         "zip":"89030",
+         "phone1":"(702) 000-0002",
+         "phone2":null,
+         "fax":"(702)000-0000",
+         "note":null,
+         "special":null,
+         "initial_apptdate":null,
+         "mostrecent_apptdate":null,
+         "recredentialing_date":null,
+         "faculty_appointment":null,
+         "precepdiscp":[
+            {
+               "discid":83,
+               "precdiscid":2980,
+               "discipline":"Obstetrics and Gynecology",
+               "pid":2305
+            }
+         ],
+         "hospitals":null
+      },
+      {
+         "id":6381,
+         "state":null,
+         "title":null,
+         "email":"crow@sbcglobal.net",
+         "campus":null,
+         "isactive":"Y",
+         "affil_year":0,
+         "lastname":"Eastwood",
+         "middlename":null,
+         "firstname":"Clint",
+         "degree":"MD",
+         "contact":"Jane Snow",
+         "pref":"Dr.",
+         "address1":null,
+         "address2":null,
+         "city":null,
+         "zip":null,
+         "phone1":"805-000-2000",
+         "phone2":null,
+         "fax":"805 000-0000",
+         "note":null,
+         "special":null,
+         "initial_apptdate":null,
+         "mostrecent_apptdate":null,
+         "recredentialing_date":null,
+         "faculty_appointment":null,
+         "precepdiscp":[
+            {
+               "discid":104,
+               "precdiscid":6180,
+               "discipline":"Other",
+               "pid":6381
+            }
+         ],
+         "hospitals":[
+            {
+               "name":"West Coast Pulmonary Critical Care Physicians",
+               "id":5248
+            }
+         ]
+      }]

@@ -1,0 +1,31 @@
+{
+    "type": "classicthemeresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyClassicTheme"
+    },
+    "designerId": "fc7a3e21-bbae-4510-9acb-9d35b89be029",
+    "storage": {
+        "needsCompile": false,
+        "simple": {
+            "pkgVersion": 1,
+            "pkgPath": "packages"
+        },
+        "nameIndex": 1,
+        "varData": {
+            "Ext.tab.Tab": {
+                "globalVars": [
+                    {
+                        "name": "tab-base-color",
+                        "enabled": true,
+                        "value": "rgba(222,236,253,1)"
+                    }
+                ]
+            }
+        }
+    }
+}
